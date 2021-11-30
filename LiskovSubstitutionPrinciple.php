@@ -56,26 +56,29 @@ class ostrich extends Bird{
 
 //refactoring the above code
 
-class Bird{
+interface Flyable {
     
+    public function fly();
+}
+interface Eatable {
+    
+    public function eat();
+}
+
+class Eagle implements Flyable,Eatable{
+    
+    public function fly(){
+            
+        //to do something
+    }
     public function eat(){
         
         //to do something
     }
 }
 
-class FlyableBird extends Bird{
+class Ostrich implements Eatable{
     
-    public function fly(){
-            
-        //to do something
-    }
-}
-
-class NonFlyableBird extends Bird{
-    
-    
-
     public function eat(){
         
         //to do something
