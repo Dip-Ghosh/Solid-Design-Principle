@@ -9,7 +9,7 @@
  */
 
 /*
- * Violation of open closed
+ * Violation of LSP
  */
 
 class Bird{
